@@ -1,0 +1,95 @@
+.product-bundle__container:not(.active) {
+    display: none;
+}
+
+.product-bundle__label {
+    display: block;
+    color: #000000;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.product-bundle__label.inline-block {
+    cursor: pointer;
+}
+
+.product-bundle__checkbox {
+    position: relative;
+}
+
+.product-bundle__checkbox::before {
+    border: 1px solid #9a9a9a;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.product-bundle__checkbox:hover::before, .product-bundle__checkbox:checked::before {
+    border: 1px solid #eb1256;
+    box-shadow: 0 0 5px 1px #eb1256;
+}
+
+.product-bundle__checkbox:checked::after {
+    content: "\2714";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: transparent;
+    font-size: 15px;
+    font-family: none;
+    color: #eb1256;
+    position: absolute;
+    transition: all 0.2s ease;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.product-bundle__select {
+    background-image: linear-gradient(45deg, transparent 50%, #9a9a9a 50%), linear-gradient(135deg, #9a9a9a 50%, transparent 50%) !important;
+    border-color: #9a9a9a !important;
+    background: #fff;
+    color: #000 !important;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    padding: 10px;
+    padding-right: 30px;
+    text-overflow: ellipsis;
+    min-height: 38px;
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    background-repeat: no-repeat !important;
+    background-position: calc(100% - 20px),calc(100% - 15px),calc(100% - 40px) 8px !important;
+    background-size: 5px 5px, 5px 5px, 1px 24px !important;
+    margin-bottom: 15px;
+}
+
+variant-radios {
+    display: none;
+}
