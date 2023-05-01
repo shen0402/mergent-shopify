@@ -20,7 +20,7 @@
               <option value="">{{ translation.form.select | default: '-- Select --' }}</option>
               {% if filter.is_selected or forloop.first or next_select_show_values %}
               {% for value in filter.values %}
-              <option{% if value.selected %} selected{% endif %} value="{{value.value | replace:"\'", "\\\'" | escape}}">{{value.label | escape}}</option>
+              <option{% if value.selected %} selected{% endif %} value="{{value.value | escape}}">{{value.label | escape}}</option>
               {% endfor %}
               {% endif %}
             </select>

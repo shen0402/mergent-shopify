@@ -49,6 +49,26 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "blocks": {
+        "beac8fa5-df4b-4940-afe8-3a896f7d0af9": {
+          "type": "link_list",
+          "settings": {
+            "title": "Collection",
+            "sidebar": "collection"
+          }
+        },
+        "d2c6aac6-88b1-4057-802b-5f2a5433f10e": {
+          "type": "link_list",
+          "settings": {
+            "title": "Brand",
+            "sidebar": "brand"
+          }
+        }
+      },
+      "block_order": [
+        "beac8fa5-df4b-4940-afe8-3a896f7d0af9",
+        "d2c6aac6-88b1-4057-802b-5f2a5433f10e"
+      ],
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
